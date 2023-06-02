@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{11422E05-3085-48C4-BAF7-1443370DF82C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SC_PLAM_GLBT_DLL</RootNamespace>
+    <AssemblyName>SC_PLAM_GLBT_DLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GBFINIMG_NET_WRAPPER, Version=4.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\GBFINIMG_NET_WRAPPER.dll</HintPath>
+    </Reference>
+    <Reference Include="GBMSAPI_NET, Version=4.1.0.0, Culture=neutral, PublicKeyToken=1ff6fb185bd75496, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\GBMSAPI_NET.dll</HintPath>
+    </Reference>
+    <Reference Include="GBMSGUI_NET, Version=2.1.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\GBMSGUI_NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WSQ_NET_WRAPPER, Version=3.1.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WSQ_NET_WRAPPER.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acquisition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BitmapEx.cs" />
+    <Compile Include="FigState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FigState.Designer.cs">
+      <DependentUpon>FigState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Foot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Foot.Designer.cs">
+      <DependentUpon>Foot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPTData3R.cs" />
+    <Compile Include="ftpcountect.cs" />
+    <Compile Include="ftpcreat.cs" />
+    <Compile Include="gfsqualitycheck.cs" />
+    <Compile Include="InformationData.cs" />
+    <Compile Include="IObjectSafety.cs" />
+    <Compile Include="Log.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="messageboxshow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="messageboxshow.Designer.cs">
+      <DependentUpon>messageboxshow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NFIQ2DLL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PLAM_GLBT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PLAM_GLBT.Designer.cs">
+      <DependentUpon>PLAM_GLBT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="footUpload.cs" />
+    <Compile Include="UTILITY\GBMSAPI_Example_DevNameStrings.cs" />
+    <Compile Include="UTILITY\GBMSAPI_Example_Globals.cs" />
+    <Compile Include="UTILITY\GBMSAPI_Example_Util.cs" />
+    <EmbeddedResource Include="FigState.resx">
+      <DependentUpon>FigState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Foot.resx">
+      <DependentUpon>Foot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messageboxshow.resx">
+      <DependentUpon>messageboxshow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLAM_GLBT.resx">
+      <DependentUpon>PLAM_GLBT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="bin\Debug\PLAM_GLBT_dll.tlb" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\AN2K_LIB.dll" />
+    <Content Include="bin\Debug\Bozorth.dll" />
+    <Content Include="bin\Debug\DID20.dll" />
+    <Content Include="bin\Debug\DID20IP.dll" />
+    <Content Include="bin\Debug\dll\AN2K_LIB.dll" />
+    <Content Include="bin\Debug\dll\Bozorth.dll" />
+    <Content Include="bin\Debug\dll\DID20.dll" />
+    <Content Include="bin\Debug\dll\DID20IP.dll" />
+    <Content Include="bin\Debug\dll\DS40U.dll" />
+    <Content Include="bin\Debug\dll\DS84C.dll" />
+    <Content Include="bin\Debug\dll\DSBeep.dll" />
+    <Content Include="bin\Debug\dll\FSM26U.dll" />
+    <Content Include="bin\Debug\dll\GBFINIMG.dll" />
+    <Content Include="bin\Debug\dll\GBFIR.dll" />
+    <Content Include="bin\Debug\dll\GBFIR_NET_WRAPPER.dll" />
+    <Content Include="bin\Debug\dll\GBImgTran.dll" />
+    <Content Include="bin\Debug\dll\GBJPEG.dll" />
+    <Content Include="bin\Debug\dll\GBLFS_NET.dll" />
+    <Content Include="bin\Debug\dll\GBMSAPI.dll" />
+    <Content Include="bin\Debug\dll\GBMSGUI_Qt.dll" />
+    <Content Include="bin\Debug\dll\GBNFIQ.dll" />
+    <Content Include="bin\Debug\dll\GBNFIQ2.dll" />
+    <Content Include="bin\Debug\dll\GB_LivenessDetector.dll" />
+    <Content Include="bin\Debug\dll\icudt53.dll" />
+    <Content Include="bin\Debug\dll\icuin53.dll" />
+    <Content Include="bin\Debug\dll\icuuc53.dll" />
+    <Content Include="bin\Debug\dll\JPEG_NET_WRAPPER.dll" />
+    <Content Include="bin\Debug\dll\Lfs.dll" />
+    <Content Include="bin\Debug\dll\MC517.dll" />
+    <Content Include="bin\Debug\dll\MS527.dll" />
+    <Content Include="bin\Debug\dll\NFIQ2DLL.dll" />
+    <Content Include="bin\Debug\dll\opencv_core2411.dll" />
+    <Content Include="bin\Debug\dll\opencv_core242.dll" />
+    <Content Include="bin\Debug\dll\opencv_highgui2411.dll" />
+    <Content Include="bin\Debug\dll\opencv_imgproc2411.dll" />
+    <Content Include="bin\Debug\dll\opencv_imgproc242.dll" />
+    <Content Include="bin\Debug\dll\opencv_ml2411.dll" />
+    <Content Include="bin\Debug\dll\opencv_ml242.dll" />
+    <Content Include="bin\Debug\dll\Qt5Core.dll" />
+    <Content Include="bin\Debug\dll\Qt5Gui.dll" />
+    <Content Include="bin\Debug\dll\Qt5Multimedia.dll" />
+    <Content Include="bin\Debug\dll\Qt5Network.dll" />
+    <Content Include="bin\Debug\dll\Qt5Widgets.dll" />
+    <Content Include="bin\Debug\dll\VsRoll.dll" />
+    <Content Include="bin\Debug\dll\WSQPack.dll" />
+    <Content Include="bin\Debug\DS40U.dll" />
+    <Content Include="bin\Debug\DS84C.dll" />
+    <Content Include="bin\Debug\DSBeep.dll" />
+    <Content Include="bin\Debug\FSM26U.dll" />
+    <Content Include="bin\Debug\GBFINIMG.dll" />
+    <Content Include="bin\Debug\GBFINIMG_NET_WRAPPER.dll" />
+    <Content Include="bin\Debug\GBFIR.dll" />
+    <Content Include="bin\Debug\GBFIR_NET_WRAPPER.dll" />
+    <Content Include="bin\Debug\GBImgTran.dll" />
+    <Content Include="bin\Debug\GBJPEG.dll" />
+    <Content Include="bin\Debug\GBLFS_NET.dll" />
+    <Content Include="bin\Debug\GBMSAPI.dll" />
+    <Content Include="bin\Debug\GBMSAPI_NET.dll" />
+    <Content Include="bin\Debug\GBMSGUI_NET.dll" />
+    <Content Include="bin\Debug\GBMSGUI_Qt.dll" />
+    <Content Include="bin\Debug\GBNFIQ.dll" />
+    <Content Include="bin\Debug\GBNFIQ2.dll" />
+    <Content Include="bin\Debug\GB_LivenessDetector.dll" />
+    <Content Include="bin\Debug\icudt53.dll" />
+    <Content Include="bin\Debug\icuin53.dll" />
+    <Content Include="bin\Debug\icuuc53.dll" />
+    <Content Include="bin\Debug\JPEG_NET_WRAPPER.dll" />
+    <Content Include="bin\Debug\Lfs.dll" />
+    <Content Include="bin\Debug\LT_PLAM_GLBT.dll" />
+    <Content Include="bin\Debug\MC517.dll" />
+    <Content Include="bin\Debug\MS527.dll" />
+    <Content Include="bin\Debug\NFIQ2DLL.dll" />
+    <Content Include="bin\Debug\opencv_core2411.dll" />
+    <Content Include="bin\Debug\opencv_core242.dll" />
+    <Content Include="bin\Debug\opencv_highgui2411.dll" />
+    <Content Include="bin\Debug\opencv_imgproc2411.dll" />
+    <Content Include="bin\Debug\opencv_imgproc242.dll" />
+    <Content Include="bin\Debug\opencv_ml2411.dll" />
+    <Content Include="bin\Debug\opencv_ml242.dll" />
+    <Content Include="bin\Debug\PLAM_GLBT_dll.dll" />
+    <Content Include="bin\Debug\PLAM_GLBT_dll.pdb" />
+    <Content Include="bin\Debug\Qt5Core.dll" />
+    <Content Include="bin\Debug\Qt5Gui.dll" />
+    <Content Include="bin\Debug\Qt5Multimedia.dll" />
+    <Content Include="bin\Debug\Qt5Network.dll" />
+    <Content Include="bin\Debug\Qt5Widgets.dll" />
+    <Content Include="bin\Debug\VsRoll.dll" />
+    <Content Include="bin\Debug\WSQPack.dll" />
+    <Content Include="bin\Debug\WSQ_NET_WRAPPER.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxCaptureLib">
+      <Guid>{DA239D05-CC1E-42A7-B76F-6C9D80B76495}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="CaptureLib">
+      <Guid>{DA239D05-CC1E-42A7-B76F-6C9D80B76495}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
