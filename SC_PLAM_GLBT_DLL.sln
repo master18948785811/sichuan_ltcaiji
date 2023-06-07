@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1300
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SC_PLAM_GLBT_DLL", "PLAM_GLBT_dll\SC_PLAM_GLBT_DLL.csproj", "{11422E05-3085-48C4-BAF7-1443370DF82C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{4DC8F6AB-8328-46B4-A310-04AC847FE0B4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestForm", "TestForm\TestForm.csproj", "{F8206B1A-4A5D-47B7-9887-CBD665A005A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SC_PLUGIN_DLL", "PLAM_ZB\SC_PLUGIN_DLL.csproj", "{1CFC1CDC-01BC-40D0-A183-5C2CC47CEE41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,18 @@ Global
 		{F8206B1A-4A5D-47B7-9887-CBD665A005A4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{F8206B1A-4A5D-47B7-9887-CBD665A005A4}.Release|x86.ActiveCfg = Release|Any CPU
 		{F8206B1A-4A5D-47B7-9887-CBD665A005A4}.Release|x86.Build.0 = Release|Any CPU
+		{1CFC1CDC-01BC-40D0-A183-5C2CC47CEE41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CFC1CDC-01BC-40D0-A183-5C2CC47CEE41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CFC1CDC-01BC-40D0-A183-5C2CC47CEE41}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1CFC1CDC-01BC-40D0-A183-5C2CC47CEE41}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1CFC1CDC-01BC-40D0-A183-5C2CC47CEE41}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1CFC1CDC-01BC-40D0-A183-5C2CC47CEE41}.Debug|x86.Build.0 = Debug|Any CPU
+		{1CFC1CDC-01BC-40D0-A183-5C2CC47CEE41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CFC1CDC-01BC-40D0-A183-5C2CC47CEE41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CFC1CDC-01BC-40D0-A183-5C2CC47CEE41}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1CFC1CDC-01BC-40D0-A183-5C2CC47CEE41}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1CFC1CDC-01BC-40D0-A183-5C2CC47CEE41}.Release|x86.ActiveCfg = Release|Any CPU
+		{1CFC1CDC-01BC-40D0-A183-5C2CC47CEE41}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

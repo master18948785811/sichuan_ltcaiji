@@ -77,9 +77,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PLAM_GLBT_dll\SC_PLAM_GLBT_DLL.csproj">
-      <Project>{11422E05-3085-48C4-BAF7-1443370DF82C}</Project>
-      <Name>SC_PLAM_GLBT_DLL</Name>
+    <ProjectReference Include="..\SC_PLUGIN_DLL\SC_PLUGIN_DLL.csproj">
+      <Project>{1cfc1cdc-01bc-40d0-a183-5c2cc47cee41}</Project>
+      <Name>SC_PLUGIN_DLL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

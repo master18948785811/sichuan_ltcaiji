@@ -17,6 +17,9 @@ namespace TestForm
             InitializeComponent();
         }
 
+       
+        //string guid = "53583C8A-1A04-4C28-BE1D-5EDD04839195";
+        string guid = "DEC1538D-6127-4C6C-9F23-CA9F5F6500CD";
         private void Test_Load(object sender, EventArgs e)
         {
             try
@@ -27,10 +30,10 @@ namespace TestForm
                 }
                 panel1.Controls.Clear();
 
-                var type = Type.GetTypeFromCLSID(Guid.Parse("53583C8A-1A04-4C28-BE1D-5EDD04839195"));
+                var type = Type.GetTypeFromCLSID(Guid.Parse(guid));
                 if (type == null)
                 {
-                    MessageBox.Show("未能找到 CLSID 为 53583C8A-1A04-4C28-BE1D-5EDD04839195 的控件！");
+                    MessageBox.Show("未能找到 CLSID 为 "+ guid + " 的控件！");
                     return;
                 }
                 var obj = Activator.CreateInstance(type);

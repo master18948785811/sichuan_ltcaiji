@@ -18,6 +18,8 @@ namespace test
         {
             InitializeComponent();
         }
+        //string guid = "53583C8A-1A04-4C28-BE1D-5EDD04839195";
+        string guid = "DEC1538D-6127-4C6C-9F23-CA9F5F6500CD";
         private void Form1_Load(object sender, EventArgs e)
         {
             try
@@ -28,10 +30,10 @@ namespace test
                 }
                 panel1.Controls.Clear();
 
-                var type = Type.GetTypeFromCLSID(Guid.Parse("53583C8A-1A04-4C28-BE1D-5EDD04839195"));
+                var type = Type.GetTypeFromCLSID(Guid.Parse(guid));
                 if (type == null)
                 {
-                    MessageBox.Show("未能找到 CLSID 为 53583C8A-1A04-4C28-BE1D-5EDD04839195 的控件！");
+                    MessageBox.Show("未能找到 CLSID 为 "+ guid + " 的控件！");
                     return;
                 }
                 var obj = Activator.CreateInstance(type);
@@ -42,7 +44,8 @@ namespace test
                 MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        SC_PLAM_GLBT_DLL.PLAM_GLBT a = new SC_PLAM_GLBT_DLL.PLAM_GLBT();
+        //SC_PLAM_GLBT_DLL.PLAM_GLBT a = new SC_PLAM_GLBT_DLL.PLAM_GLBT();
+        //SC_PLUGIN_DLL.SC_PLUGIN_DLL a = new SC_PLUGIN_DLL.SC_PLUGIN_DLL();
         private void button1_Click(object sender, EventArgs e)
         {
             string imgPath = "E:\\VS2019\\sc\\四川成都（插件源码）\\指纹插件\\SC_PLAM_GLBT_DLL\\test\\bin\\Debug\\cjz.bmp";
@@ -60,8 +63,8 @@ namespace test
             XmlDocument xdoc = new XmlDocument();
             xdoc.LoadXml(b);
             string strXml = xdoc.InnerXml;
-            string str=a.initFingerPlamOCX(strXml);
-            MessageBox.Show(str);
+            //string str=a.initFingerPlamOCX(strXml);
+            //MessageBox.Show(str);
         }
         public static byte[] BitmapByte(Bitmap bit) 
         {
@@ -79,7 +82,7 @@ namespace test
         {
             try
             {
-                a.getFingerPLamList();
+                //a.getFingerPLamList();
             }
             catch (Exception ex)
             {
