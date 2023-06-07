@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PLAM_GLBT));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label23 = new System.Windows.Forms.Label();
             this.RIGHT_PALMAR = new System.Windows.Forms.PictureBox();
             this.label116 = new System.Windows.Forms.Label();
@@ -347,7 +347,7 @@
             this.tabPage5.Controls.Add(this.LEFT_PALM);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(350, 766);
+            this.tabPage5.Size = new System.Drawing.Size(352, 756);
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "掌纹采集";
             // 
@@ -465,7 +465,7 @@
             this.tabPage4.Controls.Add(this.label14);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(350, 766);
+            this.tabPage4.Size = new System.Drawing.Size(352, 756);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "平面指纹采集";
             // 
@@ -826,9 +826,9 @@
             this.upload.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(78)))), ((int)(((byte)(208)))));
             this.upload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.upload.ForeColor = System.Drawing.Color.White;
-            this.upload.Location = new System.Drawing.Point(376, 9);
+            this.upload.Location = new System.Drawing.Point(365, 5);
             this.upload.Name = "upload";
-            this.upload.Size = new System.Drawing.Size(113, 23);
+            this.upload.Size = new System.Drawing.Size(110, 25);
             this.upload.TabIndex = 10;
             this.upload.Text = "上传市局";
             this.upload.UseVisualStyleBackColor = false;
@@ -914,14 +914,15 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(350, 766);
+            this.tabPage3.Size = new System.Drawing.Size(352, 756);
             this.tabPage3.TabIndex = 1;
             this.tabPage3.Text = "四联指采集";
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(376, 38);
+            this.pictureBox1.Location = new System.Drawing.Point(365, 35);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(750, 750);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1108,7 +1109,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(350, 766);
+            this.tabPage6.Size = new System.Drawing.Size(352, 764);
             this.tabPage6.TabIndex = 0;
             this.tabPage6.Text = "滚动指纹采集";
             // 
@@ -1414,31 +1415,31 @@
             this.tabControl2.Location = new System.Drawing.Point(0, 3);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(358, 792);
+            this.tabControl2.Size = new System.Drawing.Size(360, 790);
             this.tabControl2.TabIndex = 8;
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage1.Controls.Add(this.tabControl2);
             this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Controls.Add(this.upload);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1317, 831);
+            this.tabPage1.Size = new System.Drawing.Size(1272, 874);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "指掌纹采集";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Font = new System.Drawing.Font("宋体", 9F);
-            this.tabControl1.Location = new System.Drawing.Point(3, 3);
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1325, 857);
+            this.tabControl1.Size = new System.Drawing.Size(1280, 900);
             this.tabControl1.TabIndex = 2;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -1454,7 +1455,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1317, 831);
+            this.tabPage2.Size = new System.Drawing.Size(1272, 874);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "足迹采集";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1500,14 +1501,14 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 9F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("宋体", 9F);
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
             this.dataGridView1.ColumnHeadersHeight = 30;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -1515,21 +1516,21 @@
             this.Column4,
             this.Column3,
             this.Column6});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("宋体", 9F);
+            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle27;
             this.dataGridView1.Location = new System.Drawing.Point(432, 56);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Height = 30;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(480, 555);
+            this.dataGridView1.Size = new System.Drawing.Size(509, 555);
             this.dataGridView1.TabIndex = 346;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -1559,10 +1560,10 @@
             // Column3
             // 
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(78)))), ((int)(((byte)(208)))));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(78)))), ((int)(((byte)(208)))));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.White;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle26;
             this.Column3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Column3.HeaderText = "删除";
             this.Column3.Name = "Column3";
@@ -1578,7 +1579,7 @@
             // ShowFoot
             // 
             this.ShowFoot.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ShowFoot.Location = new System.Drawing.Point(913, 3);
+            this.ShowFoot.Location = new System.Drawing.Point(943, 3);
             this.ShowFoot.Name = "ShowFoot";
             this.ShowFoot.Size = new System.Drawing.Size(326, 608);
             this.ShowFoot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1596,7 +1597,7 @@
             this.foot_Position.Location = new System.Drawing.Point(674, 10);
             this.foot_Position.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.foot_Position.Name = "foot_Position";
-            this.foot_Position.Size = new System.Drawing.Size(212, 20);
+            this.foot_Position.Size = new System.Drawing.Size(219, 20);
             this.foot_Position.TabIndex = 348;
             // 
             // label27
@@ -1613,7 +1614,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.tabControl1);
             this.Name = "PLAM_GLBT";
-            this.Size = new System.Drawing.Size(1331, 860);
+            this.Size = new System.Drawing.Size(1280, 900);
             this.Load += new System.EventHandler(this.PLAM_GLBT_Load);
             ((System.ComponentModel.ISupportInitialize)(this.RIGHT_PALMAR)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RIGHT_PALM)).EndInit();

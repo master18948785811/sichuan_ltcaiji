@@ -2947,6 +2947,7 @@ namespace SC_PLAM_GLBT_DLL
                 {
                     MessageBox.Show("足迹设备初始化失败");
                 }
+                
             }
         }
         /// <summary>

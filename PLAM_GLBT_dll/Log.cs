@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace SC_PLAM_GLBT_DLL
 {
-    class Log:PLAM_GLBT
+    class Log : PLAM_GLBT
     {
         private static Object _lock = new object();
         public static void WriteInfoLog(string logContent)
@@ -54,3 +54,4 @@ namespace SC_PLAM_GLBT_DLL
         }
     }
 }
+
